@@ -1,7 +1,6 @@
-# Customer Swing App (Maven + H2)
+# Customer Management App
 
 Simple Java Swing application that manages customers and up to 3 addresses per customer.
-Uses an embedded H2 database (file stored under user home directory `~/.customer-swing-app`).
 
 ## Features
 - DB schema created automatically on first run.
@@ -26,8 +25,9 @@ java -jar target/customer-management-app-1.0.0.jar
 Alternatively, run from IDE by launching `com.example.app.CustomerManagementApp`.
 
 ## Project structure
-- `com.example.app` - MainApp (Swing UI)
+- `com.example.app` - CustomerManagement (Main class)
 - `com.example.db` - Database bootstrap and DAOs
 - `com.example.model` - Customer and Address models
 - `com.example.util` - Validator utilities
+- `com.example.view` - Customer and Address Panels(Swing UI)
 
